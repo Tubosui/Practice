@@ -1,3 +1,4 @@
+<<Queen.javaの実行結果>>
 xxxQxxxx
 xQxxxxxx
 xxxxxxQx
