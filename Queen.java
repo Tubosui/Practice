@@ -89,7 +89,7 @@ public class Queen {
     }
     
     /**
-     * Queenが置かれている状態から置けない場所を作り直す
+     * Queenが置かれている場所を保持するQueen配列からQueenが置けない場所を表すByte配列を作り直す
      */
     public static void restrate(){
         byte[] b = {0,0,0,0,0,0,0,0};
