@@ -1,8 +1,8 @@
 public class TorF {
     
     public static void main(String[] args){
-        White e = new White();
-        System.out.println(e.getX("1^0|0|1", false));//2
+        TorF tf = new TorF();
+        System.out.println(tf.getX("1^0|0|1", false));//2
     }
      /**
       * 内部クラス　0、1のそれぞれのパターンを保持するラッパークラス
