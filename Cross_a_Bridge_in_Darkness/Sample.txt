@@ -1,0 +1,10 @@
+★Cross_a_Bridge_in_Darkness.javaの実行結果
+
+time:17
+process:
+toRight:0 1 (2m)
+toLeft: 0   (3m)
+toRight:2 3 (13m)
+toLeft: 1   (15m)
+toRight:0 1 (17m)
+

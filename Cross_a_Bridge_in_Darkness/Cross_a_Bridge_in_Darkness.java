@@ -9,7 +9,7 @@ public class Cross_a_Bridge_in_Darkness {
     public static void main(String[] args){
         Cross_a_Bridge_in_Darkness cbd = new Cross_a_Bridge_in_Darkness();
         int[] menber = {1, 2, 5, 10};
-        System.out.println(cbd.getTime(menber));
+        System.out.println("time:" + cbd.getTime(menber));
         System.out.println(cbd.result);
     }
     
@@ -28,7 +28,7 @@ public class Cross_a_Bridge_in_Darkness {
         pattern.add((byte)0);
         direction.add(true);
         time.add(0);
-        result.add("process\n");
+        result.add("process:\n");
         
         //幅探索
         while(!pattern.isEmpty()){
