@@ -1,5 +1,7 @@
 ★Cross_a_Bridge_in_Darkness.javaの実行結果
 
+(int[] times = {1, 2, 5, 10}で実行)
+
 time:17
 process:
 toRight:0 1 (2m)
