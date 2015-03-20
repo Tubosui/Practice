@@ -37,6 +37,7 @@ public class Test {
             n  -= numbers[count++] * r;
             r /= 10;
         }
+		this.count = 0;
         this.result = "No Answer!";
         this.tf = false;
     }
