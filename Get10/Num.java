@@ -58,7 +58,7 @@ public class Num {
         int n = num[index[this.runner]];
         boolean[] flag ={true, true};
         switch(c){
-            case pu:
+            case pl:
                 f = this.right + n;
                 flag[0] = false;
                 flag[1] = false;
@@ -89,7 +89,7 @@ public class Num {
         float f = 0;
         boolean[] flag = {true, true};
         switch(c){
-            case pu:
+            case pl:
                 f = this.left + this.right;
                 flag[0] = false;
                 flag[1] = false;
@@ -120,7 +120,7 @@ public class Num {
         float n = 0;
         boolean[] flag = {true, true};
         switch(c){
-        case pu:
+        case pl:
             n = this.left + this.right;
             flag[0] = false;
             flag[1] = false;

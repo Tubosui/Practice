@@ -3,7 +3,7 @@
  * @author kazuma
  */
 public enum Calc {
-    pu('+'), mi('-'), mu('×'), de('÷');
+    pl('+'), mi('-'), mu('×'), de('÷');
     private char mark;
     private Calc(char c){
         this.mark = c;

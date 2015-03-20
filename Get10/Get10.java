@@ -12,7 +12,7 @@ public class Get10 {
     long time = 0;  //実行時間を保持
     String result;//答え
     int[] numbers;  //計算に使う数の配列
-    Calc[] m = {Calc.pu, Calc.mi, Calc.mu, Calc.de};//演算方法(+, -, *, /)
+    Calc[] m = {Calc.pl, Calc.mi, Calc.mu, Calc.de};//演算方法(+, -, *, /)
 	
     /**
      * 初期化するメソッド
