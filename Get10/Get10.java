@@ -22,6 +22,8 @@ public class Test {
      */
     public void init(String s) throws NumberFormatException, Exception{
         int length = s.length();
+		//1桁では無理
+        if (length == 1) throw new Exception("1桁では無理っす(^q^)！");
         //byteを使っているため8桁以内でないと正常に数列を並び替える事ができない。
         if(length > 8) throw new Exception("8桁以内の数字を入力してください(^q^)!");
         
