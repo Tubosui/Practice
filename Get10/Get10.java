@@ -5,15 +5,16 @@ import Lib.ByteBit;
 /**
  * ある数列の各桁の数を四則演算して10にするプログラム
  * @author kazuma
- * 他でもない「全探索」をしているため効率は悪い！！
+ * 他でもない「全探索」をしているため効率は悪いかも
  */
-public class Get10 {
+public class Test {
     long count = 0; //計算量を保持
     long time = 0;  //実行時間を保持
+    boolean tf = false;	//答えが見つかっているかどうか
     String result;//答え
     int[] numbers;  //計算に使う数の配列
-    Calc[] m = {Calc.pl, Calc.mi, Calc.mu, Calc.de};//演算方法(+, -, *, /)
-	
+    Calc[] m = {Calc.pu, Calc.mi, Calc.mu, Calc.de};//演算方法(+, -, *, /)
+    
     /**
      * 初期化するメソッド
      * @param s 四則演算に使う数列
@@ -35,6 +36,7 @@ public class Get10 {
             r /= 10;
         }
         this.result = "No Answer!";
+        this.tf = false;
     }
     
     /**
@@ -76,6 +78,8 @@ public class Get10 {
      * @throws Exception
      */
     public void getInd(int[] index, byte b){
+        //もう見つかっている場合は探索終了
+        if(this.tf) return;
         //全てアクセス済みならgetAnsを呼び次の段階へ。
         if(b == (byte) ((1 << index.length) - 1)){
             getAns(index);
@@ -106,8 +110,9 @@ public class Get10 {
             Num N = q.poll();
             if(N.isOver()){
                 float ans = N.getF();
-                if(ans < 10 + 10e-5 && ans > 10 - 10e-5){
+                if(ans < 10 + 10e-3 && ans > 10 - 10e-3){
                     this.result = N.getResult();
+                    this.tf = true;
                     break;
                 }
             }else{
