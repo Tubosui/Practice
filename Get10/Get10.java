@@ -13,7 +13,7 @@ public class Test {
     boolean tf = false;	//答えが見つかっているかどうか
     String result;  //答え
     int[] numbers;  //計算に使う数の配列
-    Calc[] m = {Calc.pu, Calc.mi, Calc.mu, Calc.de};//演算方法(+, -, *, /)
+    Calc[] m = {Calc.pl, Calc.mi, Calc.mu, Calc.de};//演算方法(+, -, *, /)
     
     /**
      * 初期化するメソッド
