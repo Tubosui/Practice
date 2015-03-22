@@ -11,7 +11,7 @@ public class Test {
     long count = 0; //計算量を保持
     long time = 0;  //実行時間を保持
     boolean tf = false;	//答えが見つかっているかどうか
-    String result;//答え
+    String result;  //答え
     int[] numbers;  //計算に使う数の配列
     Calc[] m = {Calc.pu, Calc.mi, Calc.mu, Calc.de};//演算方法(+, -, *, /)
     
@@ -22,7 +22,7 @@ public class Test {
      */
     public void init(String s) throws NumberFormatException, Exception{
         int length = s.length();
-		//1桁では無理
+        //1桁では無理
         if (length == 1) throw new Exception("1桁では無理っす(^q^)！");
         //byteを使っているため8桁以内でないと正常に数列を並び替える事ができない。
         if(length > 8) throw new Exception("8桁以内の数字を入力してください(^q^)!");
@@ -37,7 +37,7 @@ public class Test {
             n  -= numbers[count++] * r;
             r /= 10;
         }
-		this.count = 0;
+        this.count = 0;
         this.result = "No Answer!";
         this.tf = false;
     }
