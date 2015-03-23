@@ -10,7 +10,7 @@ import Lib.ByteBit;
 public class Test {
     long count = 0; //計算量を保持
     long time = 0;  //実行時間を保持
-    boolean isOver = false;	//答えが見つかっているかどうか
+    boolean alreadyFound = false;	//答えが見つかっているかどうか
     String result;  //答え
     int[] numbers;  //計算に使う数の配列
     Calc[] m = {Calc.pl, Calc.mi, Calc.mu, Calc.de};//演算方法(+, -, *, /)
@@ -39,7 +39,7 @@ public class Test {
         }
         this.count = 0;
         this.result = "No Answer!";
-        this.isOver = false;
+        this.alreadyFound = false;
     }
     
     /**
@@ -82,7 +82,7 @@ public class Test {
      */
     public void getInd(int[] index, byte b){
         //もう見つかっている場合は探索終了
-        if(this.isOver) return;
+        if(this.alreadyFound) return;
         //全てアクセス済みならgetAnsを呼び次の段階へ。
         if(b == (byte) ((1 << index.length) - 1)){
             getAns(index);
@@ -115,7 +115,7 @@ public class Test {
                 float ans = N.getF();
                 if(ans < 10 + 10e-3 && ans > 10 - 10e-3){
                     this.result = N.getResult();
-                    this.isOver = true;
+                    this.alreadyFound = true;
                     break;
                 }
             }else{
