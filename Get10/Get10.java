@@ -13,7 +13,7 @@ public class Test {
     boolean alreadyFound = false;	//答えが見つかっているかどうか
     String result;  //答え
     int[] numbers;  //計算に使う数の配列
-    Calc[] m = {Calc.pl, Calc.mi, Calc.mu, Calc.de};//演算方法(+, -, *, /)
+    Calc[] cal = {Calc.pl, Calc.mi, Calc.mu, Calc.de};//演算方法(+, -, *, /)
     
     /**
      * 初期化するメソッド
@@ -119,9 +119,9 @@ public class Test {
                     break;
                 }
             }else{
-                for(int i = 0; i < this.m.length; i++){
-                    q.add(N.append(this.m[i]));
-                    q.add(N.flushAppend(this.m[i]));
+                for(int i = 0; i < this.cal.length; i++){
+                    q.add(N.append(this.cal[i]));
+                    q.add(N.flushAppend(this.cal[i]));
                 }
             }
         }
