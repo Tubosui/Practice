@@ -1,4 +1,3 @@
-package kazuma.ib;
 
 import java.util.Random;
 
