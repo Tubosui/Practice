@@ -1,2 +1,2 @@
 //SortTurningNumbers.javaの実行結果
-95:27
+95
