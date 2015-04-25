@@ -1,0 +1,24 @@
+★TableView
+○UITableViewDataSource
+øセクションごとの行数を返す
+tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+ø各行に表示するセルを返す
+tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+øセクションタイトルを返す
+tableView(tbaleView: UITableView, titleForHeaderInSection section: Int) -> String?
+øセクション数を返す
+numberOfSectionsInTableView(tableView: UITableView) -> Int
+∆セルの高さを返す
+tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+
+
+○UITableViewDelegate
+øクリックした時に呼び出される
+tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+
+cellの作り方
+let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell 
+
+
+
+AKEYvGK3
