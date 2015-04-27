@@ -1,4 +1,4 @@
-public class Sample {
+public class SearchInGrid {
     public static boolean flag = false;//要素がもう見つかった時、trueになる
     public static void main(String[] args){
         //対象の配列を作り、出力
