@@ -1,0 +1,3 @@
+//StreamNumberの実行結果
+StreamNumber:2 5 5 11 14 16 17 21 22 29 30 39 40 40 48 
+ans:9

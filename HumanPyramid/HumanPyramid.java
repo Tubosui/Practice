@@ -11,7 +11,7 @@ class HumanPyramid {
         for(int i = 0; i < w.length; i++){
             w[i] = rnd.nextInt(80) + 100;
             h[i] = w[i] / 10 + (rnd.nextInt(2) + 2) * 20;
-            System.out.print("団員" + (i+1) + " =\t(" + w[i] + ", " + h[i] + ")\n");
+            System.out.print("団員" + i + " =\t(" + w[i] + ", " + h[i] + ")\n");
         }
         //求める
         System.out.println(createTower(w, h));
